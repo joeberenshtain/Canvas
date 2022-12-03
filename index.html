@@ -4,50 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website | Joe Berenshtain    </title>
+    <title>Place</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
-    <h1 class="title">Joe Berenshtain</h1>
-    <img src="favicon_io/android-chrome-512x512.png" alt="icon" class="center-icon">
-    <div class="main">
-        <div class="featured opt-1">
-            <a href="test">
-                <strong>Matrices</strong>
-                <small>Animating Matrix Math</small>
-            </a>
-        </div>
-        <div class="featured opt-2">
-            <a href="test">
-                <strong>Cube</strong>
-                <small>Testing 3D graphics</small>
-            </a>
-        </div>
-        <div class="featured opt-3">
-            <a href="test">
-                <strong>Rock Paper Scissors</strong>
-                <small>A self-improving Agent in RPS</small>
-            </a>
-        </div>
-        <div class="featured opt-4">
-            <a href="test">
-                <strong>Filters</strong>
-                <small>Digital Image Processing</small>
-            </a>
-        </div>
-        <div class="featured opt-5">
-            <a href="test">
-                <strong>Golf</strong>
-                <small>Ball Physics</small>
-            </a>
-        </div>
-        <div class="featured opt-6">
-            <a href="test">
-                <strong>Canvas</strong>
-                <small>A bland Canvas for Pixil Art</small>
-            </a>
-        </div>
+    <canvas id="canvas"></canvas>
+    <div class="colour-selector">
+        <h1>Colours</h1>
+        <button class="colour" style="background-color: white;" onclick="color = 0"></button>
+        <button class="colour" style="background-color: red;" onclick="color = 1; console.log(color)"></button>
+        <button class="colour" style="background-color: orange;" onclick="color = 2"></button>
+        <button class="colour" style="background-color: yellow;" onclick="color = 3"></button>
+        <button class="colour" style="background-color: lightgreen;" onclick="color = 4"></button><br>
+        <button class="colour" style="background-color: cyan;" onclick="color = 5"></button>
+        <button class="colour" style="background-color: blue;" onclick="color = 6"></button>
+        <button class="colour" style="background-color: blueviolet;" onclick="color = 7"></button>
+
+
     </div>
+    <script src="/main.js"></script>
+
 </body>
 </html>

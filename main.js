@@ -1,15 +1,4 @@
 
-// import { initializeApp } from 'firebase/app';
-// import { getDatabase } from "firebase/database";
-
-// // TODO: Replace the following with your app's Firebase project configuration
-// const firebaseConfig = {
-//   //...
-// };
-
-// const app = initializeApp(firebaseConfig);
-// const db = getDatabase(app);
-// db.set()
 
 const pixilSize = 20;
 const width = 100;
@@ -81,10 +70,7 @@ app.scrollBy = function(deltaX, deltaY) {
         var newLeft = this.left + deltaX;
         // make sure we're in the bounds
         this.left = newLeft > app.WIDTH - canvas.width ? app.WIDTH - canvas.width : newLeft < 0 ? 0 : newLeft;
-        // update the horizontal cursor
-        //this.horizontal.cursor.left = toScrollCoords(this.left, this.horizontal);
-        // show our scrollbar
-        //this.horizontal.visible = true;
+        
     }
     if (deltaY) {
         deltaY = -deltaY
@@ -96,8 +82,7 @@ app.scrollBy = function(deltaX, deltaY) {
             newTop = 0;
         }
         this.top = newTop
-        //this.vertical.cursor.top = toScrollCoords(this.top, this.vertical);
-        //this.vertical.visible = true;
+        
   }
     app.draw()
 }
